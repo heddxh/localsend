@@ -92,7 +92,7 @@ jobs:
       - name: Build AppImage
         uses: AppImageCrafters/build-appimage@57c3bc6963f870ce3be103117de5b5e33ffbaeb6
         with:
-          recipe: ./app/AppImageBuilder.yml
+          recipe: ./scripts/appimage/AppImageBuilder_x86_64.yml
 
       - name: Upload AppImage file
         uses: actions/upload-artifact@v4
