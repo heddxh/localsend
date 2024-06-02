@@ -25,7 +25,8 @@ Future<void> initTray() async {
     } else if (checkPlatform([TargetPlatform.macOS])) {
       await tm.trayManager.setIcon(Assets.img.logo32Black.path, isTemplate: true);
     } else if (checkPlatform([TargetPlatform.linux])) {
-      await tm.trayManager.setIcon(Assets.img.logo32White.path, preferIconTheme: true, iconName: 'localsend');
+      // FIXME: Using Assets
+      await tm.trayManager.setIcon(Assets.img.logo32White.path, preferIconTheme: true, iconName: 'localsend-symbolic');
     } else {
       await tm.trayManager.setIcon(Assets.img.logo32.path);
     }
