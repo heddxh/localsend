@@ -62,7 +62,9 @@ dependencies:
   slang: 3.31.0
   slang_flutter: 3.31.0
   system_settings: 2.1.0
-  tray_manager: 0.2.2
+  tray_manager:
+    git:
+      url: https://github.com/heddxh/tray_manager
   url_launcher: 6.2.4
   uuid: 3.0.7
   wakelock_plus: 1.1.4
